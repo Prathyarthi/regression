@@ -65,4 +65,10 @@ from sklearn.metrics import r2_score
 score = r2_score(y_test,y_pred)
 print("Accuracy :",score)
 
+
+# For any new data point, let's say 82
+new_data = [[82]]
+w = scaler.transform(new_data)
+print("The predicted height for the weight 82 is:",regressor.predict([w[0]]))
+
   
